@@ -22,7 +22,7 @@ jobs:
         cd /tmp/pandoc
         python -m pip --no-cache-dir install setuptools wheel
         python -m pip --no-cache-dir install pandocfilters Pygments
-        sudo apt install -y texlive-full texlive-xetex latexmk wget
+        sudo apt install -y texlive texlive-lang-chinese texlive-xetex latexmk wget
         wget -q "https://github.com/jgm/pandoc/releases/download/3.3/pandoc-3.3-1-amd64.deb"
         sudo dpkg -i pandoc-3.3-1-amd64.deb
         rm -rf *.deb
