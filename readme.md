@@ -1,6 +1,6 @@
 ## 关于模板库
 
-![](https://github.com/F0RE1GNERS/template/workflows/build/badge.svg)
+![](https://github.com/accepted-zhs/template/workflows/build/badge.svg)
 
 [PDF 下载](https://F0RE1GNERS.github.io/template/template.pdf)
 
