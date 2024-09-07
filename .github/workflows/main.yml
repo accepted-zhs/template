@@ -48,8 +48,10 @@ jobs:
         cp pandoc/algo.latex ~/.pandoc/templates/
         sh pandoc/gen.sh
     - name: Deploy
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        git clone -b gh-pages https://oauth2:${{secrets.ACCESS_TOKEN}}@github.com/accepted-zhs/template /tmp/template
+        git clone -b gh-pages https://x-access-token:${GITHUB_TOKEN}@github.com/accepted-zhs/template /tmp/template
         cp template.pdf /tmp/template/
         cd /tmp/template
         git add template.pdf
